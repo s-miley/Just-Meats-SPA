@@ -1,0 +1,72 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: #772E25;
+    color: #F2F4F3;
+}
+
+/*This element selector is for the info in the first div with my name and links.*/
+nav {
+    background-color: #772E25;
+    border-radius: 5px;
+    margin: auto;
+    padding: 10px;
+    border-color: #C44536;
+    border:#C44536;
+}
+
+img{
+    height: 100px;
+    width: 100px;
+}
+
+h1 {
+    font-size: 48px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 24px;
+    color: #44FFD2;
+}
+
+h3 {
+    background-color: #772E25;
+    font-size: 14px;
+    border-radius: 2px;
+    padding: 7px;
+}
+
+a:link {
+    color: #F2F4F3;
+    /*To remove the underline on the link*/
+    text-decoration: none;
+}
+
+a:visited {
+    color: #F2F4F3;
+}
+
+a:hover {
+    color: #44FFD2;
+}
+
+a:active {
+    color: #C44536;
+}
+
+#about {
+    text-align: justify;
+    font-size: 20px;
+}
+
+.icon {
+    height: 50px;
+    width: 50px;
+}
+
+.gallery {
+    border-radius: 25%;
+    height: 150px;
+    width: 150px;
+}
