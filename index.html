@@ -3,17 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/jpg" sizes="32x32" href="assets/images/steak.jpg">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="styles.css">
-  <title>Frontend Mentor | Social links profile</title>
+  <title>Just Meats BBQ | A Taste of Heaven</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
   <header>
@@ -24,6 +18,7 @@
     </div>
   </header>
 
+  <!-- Make the nav so that it doesn't resize with a scroll bar on smaller screens because that is not visually appealing -->
   <nav>
       <a href="#menu">Menu</a>
       <a href="#about">About Us</a>
@@ -57,7 +52,74 @@
 
   <!-- Catering -->
   <div id="catering">
-    <!-- Order form? -->
+    <!-- Order form -->
+     <!-- What will be done once submit is clicked? Align left, put a border around entire form? -->
+     <form>
+      <p>Order catering for your next event!</p>
+      <label for="fname">First Name:</label>
+      <input type="text" id="fname" name="fname"><br>
+      <label for="lname">Last Name:</label>
+      <input type="text" id="lname" name="lname"><br>
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone"><br>
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email"><br>
+      <!-- Make sure the date is at least two weeks? in the future -->
+      <label for="date">When is your event?</label>
+      <input type="date" id="date" name="date"><br>
+
+      <!-- Meats selection -->
+       <!-- Align left, make entire word clickable, make two columns, maybe bigger checkboxes -->
+      <br><p>What meats do you want?</p>
+      <input type="checkbox" id="meat1" name="meat1" value="St. Louis">
+      <label for="meat1">St. Louis</label><br>
+
+      <input type="checkbox" id="meat2" name="meat2" value="Pulled Pork">
+      <label for="meat2">Pulled Pork</label><br>
+
+      <input type="checkbox" id="meat3" name="meat3" value="Baby Back">
+      <label for="meat3">Baby Back</label><br>
+
+      <input type="checkbox" id="meat4" name="meat4" value="Steak">
+      <label for="meat4">Steak</label><br>
+
+      <input type="checkbox" id="meat5" name="meat5" value="Chicken">
+      <label for="meat5">Chicken</label><br>
+
+      <input type="checkbox" id="meat6" name="meat6" value="Brisket">
+      <label for="meat6">Brisket</label><br>
+
+      <input type="checkbox" id="meat7" name="meat7" value="Hot Dogs">
+      <label for="meat7">Hot Dogs</label><br>
+
+      <input type="checkbox" id="meat8" name="meat8" value="Pork Chops">
+      <label for="meat8">Pork Chops</label><br>
+
+      <input type="checkbox" id="meat9" name="meat9" value="Hamburgers">
+      <label for="meat9">Hamburgers</label><br>
+
+      <!-- Doneness radio selection -->
+      <!-- in css, needs to be aligned left and add margin or spacing between the form and the contact section -->
+      <br><p>How done do you like your meat?</p>
+      <input type="radio" id="Fall off" name="doneness" value="Fall off the bone">
+      <label for="Fall off the bone">Fall off the bone</label><br>
+      <input type="radio" id="Tender" name="doneness" value="Tender">
+      <label for="Tender">Tender</label><br>
+      <input type="radio" id="Bite" name="doneness" value="Bite">
+      <label for="Bite">Has some bite</label><br>
+
+      <!-- Additional requests and submit -->
+      <!-- in css, make the comments box larger, relace placeholder text with text that disappears or can be typed over; add margin or padding between the label and the comment box itself -->
+      <br><label for="comments">Special Requests:</label><br>
+      <input type="text" id="comments" value="Enter special requests here..."><br>
+
+      <!--Add checkbox for joining email list, for information being correct; add confirmation that all required boxes are filled (IE add required information) and add 'not a bot' confirmation-->
+
+      <!-- Submit button; I put two line breaks at the end to give space between it and the contact section, but this can probabl be replaced in css with some margin; make it bigger and style it -->
+      <br><input type="submit" value="Submit"><br><br>
+
+
+    </form>
   </div>
   
   <!-- Contact -->
@@ -73,6 +135,7 @@
   <!-- Gallery -->
   <div id="gallery">
     <!-- Original images here -->
+     <br><p>Gallery</p>
     <img class="gallery" src="assets/images/steak.jpg"/>
     <img class="gallery" src="assets/images/ribs.jpg"/>
   </div>
